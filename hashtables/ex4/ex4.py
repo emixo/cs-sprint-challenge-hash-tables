@@ -3,8 +3,18 @@ def has_negatives(a):
     YOUR CODE HERE
     """
     # Your code here
-
-    return result
+    result = []
+    output = []
+    
+    for i in a:
+        if (i >= 0):
+            result.append(i)
+            
+    for j in a:
+        if (j < 0) and (-j in result):
+            output.append(-j)
+    
+    return output         
 
 
 if __name__ == "__main__":
